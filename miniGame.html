@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game</title>
+    <link rel="stylesheet" href="miniGame.css" type="text/css"> 
+</head>
+<body>
+
+    <div class="container">
+        <div class="impar-select" onmouseenter="setMidBallBlue()" onmouseleave="setMidBallBlack()" onclick="randomNumbers('player1')"><span class="title">Jogador 1</span>
+            <span class="winner-impar"></span>
+            <div class="content-points">
+                <span>Pontos:&nbsp;</span><span class="winner-impar-points">0</span>
+            </div>
+            <span style="margin-top: 70px;">Número Sorteado:&nbsp;</span> <span class="random-number-impar"></span>
+        </div>
+    
+        <span class="mid-ball">VS</span>
+    
+        <div class="par-select" onmouseenter="setMidBallRed()" onmouseleave="setMidBallBlack()" onclick="randomNumbers('player2')"><span class="title">Jogador 2</span>
+            <span class="winner-par"></span>
+            <div class="content-points">
+                <span>Pontos:&nbsp;</span><span class="winner-par-points">0</span>
+            </div>
+            <span style="margin-top: 70px;">Número Sorteado:&nbsp;</span> <span class="random-number-par"></span>
+        </div>
+    </div>
+
+</body>
+<script src="miniGame.js"></script>
+</html>
